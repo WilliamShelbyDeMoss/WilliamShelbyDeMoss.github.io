@@ -70,12 +70,20 @@
                 font-size: 1.25em;
             }
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script>
+                    $(document).ready(function(){
+                      $("button").click(function(){
+                    $("ul.professional-interests").slideToggle();
+                    });
+                });
+            </script>
         <title>My First Web Page</title>
     </head>
     <body>
         <div id="all-contents"> 
             <nav>
-                <heaher>My First Web Page</heaher>
+                <header>My First Web Page</header>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -83,7 +91,7 @@
             </nav>
             <main>
                 <div class="sidebar"> 
-                    <img src="/myphoto.jpg">
+                    <img src="myphoto.jpg">
                 </div>
                 <div class="content">
                     <h1>William S. DeMoss</h1>
@@ -94,6 +102,19 @@
                             <li>Game of Thrones TV series I just started the books.</li>
                             <li>Building and or painting modles.</li>
                             <li>History how and why thing happened.</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            <main>
+                <div class="content">
+                  <header>Professional Interests</header>
+                    <section class="interests">
+                      <button>Use me to see my professional interests</button>
+                        <ul class="professional-interests">
+                            <li>Webpage Development</li>
+                            <li>Business Management </li>
+                            <li>Computer Science</li>
                         </ul>
                     </section>
                 </div>
